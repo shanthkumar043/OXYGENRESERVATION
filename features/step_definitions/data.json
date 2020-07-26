@@ -1,0 +1,106 @@
+[
+ {
+  "url":"http://oxygen-test/login",
+  "adminusername":"m.x.satya",
+  "adminpassword":"Welcome2APT@123",
+  "normalusername":"s.x.kota",
+  "normalpassword":"SXK0ta1234",
+  "tripcodeforpreair":"EUMC15",
+  "tripcodeforpostair":"VEM13",
+  "tripcode":"EUTC15",
+  "cctripcode":"CCRWSRI2A",
+  "invalidtrip": "UTx",
+  "invalidtrip1":"ERTTT",
+  "validtrip":"EUT",
+  "typecustomermarket1":"Asia",
+  "typecustomermarket2":"Can",
+  "typecustomermarket3":"New",
+  "typecustomermarket4":"U",
+  "selectcustomermarket1":"Asia",
+  "selectcustomermarket2":"Japan",
+  "selectcustomermarket3":"Europe",
+  "selectcustomermarket4":"UK",
+  "travelernegetivevalue":"-5",
+  "roomnegetivevalue":"-5",
+  "searchtripwithname":"euro",
+  "searchtripwithdestaination":"Europe",
+  "essentialdetailtitle":"Mr",
+  "essentialdetailfirstname1":"Shanthkumar",
+  "essentialdetailslastname1":"ls",
+  "essentialinvaliddob1":"21/22/1990",
+  "essentialvaliddob1":"21/04/1990",
+  "essentialdetailfirstname":"Shaan",
+  "essentialdetailslastname":"ls",
+  "essentialinvaliddob":"21/22/1990",
+  "essentialvaliddob":"21/04/1994",
+  "additionalinvalidvalue1":"ss",
+  "additionalinvalidvalue2":".com@",
+  "additionalvalidemail":"shantkumar.laxmanrao@aptouring.com.au",
+  "bookingnumber":"1579631",
+  "flyingcity":"Mel",
+  "flyingdateoutbound":"08/12/2020",
+  "flyingdepdateinbound":"10/12/2020",
+  "flightrequestflyingfrom":"SYD",
+  "flightrequestclass":"Economy",
+  "flightrequestairline":"QF - Qantas Airways",
+  "flightrequestcity":"Sydney",
+  "specialrequest":"NA",
+  "ownflightairline":"EK - Emirates Airline",
+  "ownflightnumber":"30",
+  "ownflightflyingfrom":"SYD",
+  "ownflightflyingto":"CBR",
+  "ownflightdeparturedate":"02/01/2021",
+  "ownflightdepthour":"08",
+  "ownflightdeptime":"45",
+  "ownflightarrivaldate":"02/01/2021",
+  "ownflightarrivalhour":"09",
+  "ownflightarrivaltime":"00",
+  "ownflightclasstravel":"Economy",
+  "ownflightairlinelocator":"FGTYH1",
+  "supplier":"QANTAS",
+  "cost":"500",
+  "price":"600",
+  "commission":"5",
+  "noncomminssion":"6",
+  "supplierairline":"QF - Qantas Airways",
+  "supplierflightno":"61",
+  "supplierflyingfrom":"SYD",
+  "supplierflyingto":"CBR",
+  "supplierdepdate":"02/01/2021",
+  "supplierdephour":"07",
+  "supplierdepmin":"00",
+  "supplierarrivaldate":"02/01/2021",
+  "supplierarrivalhour":"09",
+  "suppliermin":"00",
+  "supplierclassoftravel":"Economy",
+  "supplierairlinerecorder":"FGTRTV"
+  
+
+
+
+
+  
+
+  
+
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
