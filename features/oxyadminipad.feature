@@ -1,5 +1,5 @@
 @OXYIPAD
-Feature: OXY AutomationIPAD
+Feature: OXY Automation IPAD
 
     As a user
     I Will create a customer
