@@ -9,7 +9,7 @@
         "test-chromelocal": "cucumber-js  --world-parameters \"{\\\"browser\\\": \\\"chrome:userProfile\\\"}\"",
         "test-Chrome-OXYRES": "cucumber-js --tags @OXYRESBOOKING --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
         "test-Chrome-OXYAIR": "cucumber-js --tags @OXYAIR --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
-        "test-chrome": "cucumber-js  --world-parameters \"{\\\"browser\\\": \\\"ie\\\"}\"",
+        "test-chrome": "cucumber-js  --world-parameters \"{\\\"browser\\\": \\\"chrome-incognito\\\"}\"",
         "test-edge": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"edge\\\"}\"",
         "test-firefox": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"firefox\\\"}\"",
         "test-opera": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"opera\\\"}\"",
