@@ -37,13 +37,13 @@ function runTest(iteration, browser) {
                 .screenshots('reports/screenshots/', true)
                 .browsers(browser)
                 .run({
-                    skipJsErrors: false,
+                    skipJsErrors: true,
                     quarantineMode: false,
                     selectorTimeout: 80000,
                     //assertionTimeout: 70000,
-                    pageLoadTimeout: 80000,
+                    pageLoadTimeout: 90000,
                     //stopOnFirstFail: true
-                    speed:1
+                    speed:0.9
                 })
                  .catch(function(error) {
                     console.error(error);
@@ -89,7 +89,7 @@ AfterAll(function() {
     }
 
     function checkLastResponse() {
-        if (testController.testRun.lastDriverStatusResponse === 'test-done-confirmation') {
+   if (testController.testRun.lastDriverStatusResponse === 'test-done-confirmation') {
             cafeRunner.close();
             process.exit();
             clearInterval(intervalId);
