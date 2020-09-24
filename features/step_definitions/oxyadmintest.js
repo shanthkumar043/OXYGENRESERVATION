@@ -109,7 +109,7 @@ dataSet.forEach(data=>{
  
     
     await testController.click(oxyadminglobalpage.oxyadminpages.Addcustomarket())
-    await testController.click(oxyadminglobalpage.oxyadminpages.Commonoption().withText('Asia'))
+    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Australia Domestic'))
     
     console.log('I will Select customer market')
  });
@@ -117,7 +117,7 @@ dataSet.forEach(data=>{
  
     
     await testController.click(oxyadminglobalpage.oxyadminpages.Addcurrency())
-    await testController.click(oxyadminglobalpage.oxyadminpages.Commonoption().withText('Australian Dollar'))
+    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Australian Dollar'))
     
     console.log('I will Select currency')
  });
@@ -181,7 +181,7 @@ dataSet.forEach(data=>{
  
     
     await testController.click(oxyadminglobalpage.oxyadminpages.Addstate())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('QUEENSLAND'))
+    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('NEW SOUTH WALES'))
     
     console.log('I will Select State in home address')
  });
@@ -291,7 +291,7 @@ dataSet.forEach(data=>{
  Then('I enter trip code for captain choice and fill all the details and book' , async function () {
  
     await testController.typeText(oxyadminglobalpage.oxyadminpages.Searchtrip(),cctripcode)
-    await testController.click(oxyadminglobalpage.oxyadminpages.Selecttrip())
+    await testController.click(oxyadminglobalpage.oxyadminpages.Selecttrip1())
     await testController.click(oxyadminglobalpage.oxyadminpages.Datepicker())
     await testController.click(oxyadminglobalpage.oxyadminpages.selectall())
     await testController.click(oxyadminglobalpage.oxyadminpages.applayall())
@@ -299,6 +299,7 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.travellersincrement())
     await testController.click(oxyadminglobalpage.oxyadminpages.roomincrement())
     await testController.click(oxyadminglobalpage.oxyadminpages.Searchtripdates())
+    await testController.click(oxyadminglobalpage.oxyadminpages.Selectpertculartrip())
     await testController.click(oxyadminglobalpage.oxyadminpages.Clickonbooking())
     await testController.click(oxyadminglobalpage.oxyadminpages.continuebooking())
     await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
@@ -319,6 +320,7 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
     await testController.wait(10000)
     await testController.click(oxyadminglobalpage.oxyadminpages.documentselect())
+    await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
     await testController.click(oxyadminglobalpage.oxyadminpages.addtraveller())
     await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentialinfo())
     await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentitalnext())
@@ -665,13 +667,7 @@ dataSet.forEach(data=>{
     await testController.typeText(oxyadminglobalpage.oxyadminpages.typecustomermarkettype(),typecustomermarket4)
     await testController.pressKey('tab')
     await testController.click(oxyadminglobalpage.oxyadminpages.customermarket())
-    await testController.click(oxyadminglobalpage.oxyadminpages.Commonoption().withText(selectcustomermarket1))
-    await testController.click(oxyadminglobalpage.oxyadminpages.customermarket())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(selectcustomermarket2))
-    await testController.click(oxyadminglobalpage.oxyadminpages.customermarket())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(selectcustomermarket3))
-    await testController.click(oxyadminglobalpage.oxyadminpages.customermarket())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(selectcustomermarket4))
+    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(selectcustomermarket1))
    
     console.log('I select diffrent customer type')
  });
@@ -930,6 +926,7 @@ dataSet.forEach(data=>{
  Then('I am able to add flight while booking' , async function () { 
     await testController.click(oxyadminglobalpage.oxyadminpages.flightclick())
     await testController.click(oxyadminglobalpage.oxyadminpages.addalltraveller())
+    await testController.wait(10000)
     await testController.click(oxyadminglobalpage.oxyadminpages.addflightbooknow())
     await testController.click(oxyadminglobalpage.oxyadminpages.searchflighttab())
     await testController.typeText(oxyadminglobalpage.oxyadminpages.addflyingcity(),flyingcity)
@@ -939,7 +936,7 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
     await testController.typeText(oxyadminglobalpage.oxyadminpages.flyingdep(),flyingdepdateinbound)
     await testController.click(oxyadminglobalpage.oxyadminpages.selectfightclassinbound())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
+    //await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
     await testController.click(oxyadminglobalpage.oxyadminpages.searchflightbtn())
     //await testController.click(oxyadminglobalpage.oxyadminpages.selectflight())
     //await testController.click(oxyadminglobalpage.oxyadminpages.cancelflightbooking())
@@ -964,7 +961,7 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.confirmandsave())
 
     /////********enable line 960 when we book multple trip with same name*******/
-    //await testController.click(oxyadminglobalpage.oxyadminpages.confirmbookinguser())
+    await testController.click(oxyadminglobalpage.oxyadminpages.confirmbookinguser())
     await testController.click(oxyadminglobalpage.oxyadminpages.termscondition())
     await testController.click(oxyadminglobalpage.oxyadminpages.confirmcondition())
     await testController.click(oxyadminglobalpage.oxyadminpages.saveandbook())
@@ -1043,7 +1040,9 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(supplierclassoftravel))
     await testController.typeText(oxyadminglobalpage.oxyadminpages.supplierairlinerecorder(),supplierairlinerecorder)
     await testController.click(oxyadminglobalpage.oxyadminpages.saveflightrequest())
+    await testController.wait(10000)
     await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+    await testController.wait(10000)
     await testController.click(oxyadminglobalpage.oxyadminpages.savechanges())
     await testController.click(oxyadminglobalpage.oxyadminpages.confirmnoteschanges())
     
@@ -1063,7 +1062,7 @@ dataSet.forEach(data=>{
     await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
     await testController.typeText(oxyadminglobalpage.oxyadminpages.flyingdep(),flyingdepdateinbound)
     await testController.click(oxyadminglobalpage.oxyadminpages.selectfightclassinbound())
-    await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
+    //await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Economy'))
     await testController.click(oxyadminglobalpage.oxyadminpages.searchflightbtn())
     //await testController.click(oxyadminglobalpage.oxyadminpages.selectflight())
     //await testController.click(oxyadminglobalpage.oxyadminpages.cancelflightbooking())
@@ -1078,6 +1077,88 @@ dataSet.forEach(data=>{
 
   });
   Then('I enter trip code for captain choice and fill all the details and book-IPAD' , async function () {
+ 
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.Searchtrip(),cctripcode)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Selecttrip())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Datepicker())
+   await testController.click(oxyadminglobalpage.oxyadminpages.selectall())
+   await testController.click(oxyadminglobalpage.oxyadminpages.applayall())
+   await testController.click(oxyadminglobalpage.oxyadminpages.travellersincrement())
+   await testController.click(oxyadminglobalpage.oxyadminpages.travellersincrement())
+   await testController.click(oxyadminglobalpage.oxyadminpages.roomincrement())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Searchtripdates())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Clickonbooking())
+   await testController.click(oxyadminglobalpage.oxyadminpages.continuebooking())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.pretourtransfer())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.pretourtransfer())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.pretourtransfer())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.documentselect())
+   await testController.click(oxyadminglobalpage.oxyadminpages.addtraveller())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentialinfo())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentitalnext())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessetialtitle())
+   await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(essentialdetailtitle))
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.confirmessentialinfofirstname(),essentialdetailfirstname)
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.confirmessentialinfolastname(),essentialdetailslastname)
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.essentialdobfield(),essentialinvaliddob)
+   await testController.pressKey('ctrl+a delete')
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.essentialdobfield(),essentialvaliddob)
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentitalnext())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmtraveler())
+   await testController.click(oxyadminglobalpage.oxyadminpages.addtraveller1())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentialinfo())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentitalnext())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessetialtitle())
+   await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText(essentialdetailtitle))
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.confirmessentialinfofirstname(),essentialdetailfirstname1)
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.confirmessentialinfolastname(),essentialdetailslastname1)
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.essentialdobfield(),essentialinvaliddob)
+   await testController.pressKey('ctrl+a delete')
+   await testController.typeText(oxyadminglobalpage.oxyadminpages.essentialdobfield(),essentialvaliddob1)
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmessentitalnext())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmtraveler())
+   await testController.click(oxyadminglobalpage.oxyadminpages.healthradio())
+   await testController.click(oxyadminglobalpage.oxyadminpages.healthradio1())
+   await testController.click(oxyadminglobalpage.oxyadminpages.healthconditionaccept())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.flightclick())
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.selecttravellerknow())
+   await testController.click(oxyadminglobalpage.oxyadminpages.commondropdown().withText('Internet'))
+   await testController.click(oxyadminglobalpage.oxyadminpages.suboptiontravellerknow())
+   await testController.pressKey('down+enter')
+   await testController.click(oxyadminglobalpage.oxyadminpages.Nextpagebutton())
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmandsave())
+   
+   /////********enable when we book multple trip with same name*******/
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmbookinguser())
+   await testController.click(oxyadminglobalpage.oxyadminpages.termscondition())
+   
+   await testController.click(oxyadminglobalpage.oxyadminpages.confirmcondition())
+   await testController.click(oxyadminglobalpage.oxyadminpages.saveandbook())
+   await testController.click(oxyadminglobalpage.oxyadminpages.expandbooking())
+   await testController.wait(10000)
+   await testController.click(oxyadminglobalpage.oxyadminpages.bookingexpand())
+   await testController.click(oxyadminglobalpage.oxyadminpages.expandmissinfinfo())
+   console.log('I enter trip code for captain choice and fill all the details and book')
+ });
+Then('I enter trip code for captain choice and fill all the details and book-IPAD' , async function () {
  
    await testController.typeText(oxyadminglobalpage.oxyadminpages.Searchtrip(),cctripcode)
    await testController.click(oxyadminglobalpage.oxyadminpages.Selecttrip())
