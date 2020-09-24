@@ -154,7 +154,7 @@ const elementByXPath = Selector(xpath => {
     const travelzoo= Selector(elementByXPath('//div[.="Travelzoo"]'))
 
     //*********************Customer Market********************************************** */
-    const customermarket = Selector(elementByXPath('//*[@id="tours-panel"]/div/form/row[1]/column[2]/app-form-field/row/column[3]/div/i'))
+    const customermarket = Selector(elementByXPath('//*[@id="tours-panel"]/div/form/row[1]/column[2]/app-form-field/row/column[2]/ng-select/div/div/div[2]/input'))
     const typecustomermarkettype = Selector(elementByXPath('//*[@id="tours-panel"]/div/form/row[1]/column[2]/app-form-field/row/column[2]/ng-select/div/div/div[2]/input'))
     const autotypecustomermarket = Selector(elementByXPath('input[autocomplete="ae3c8b682c10"]'))
 
